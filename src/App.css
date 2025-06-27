@@ -8,8 +8,8 @@
   h3 {
     font-size: var(--text-lg);
   }
-  a {
-    color: var(--color-blue-600);
-    text-decoration-line: underline;
+  a,
+  button {
+    cursor: pointer;
   }
 }
