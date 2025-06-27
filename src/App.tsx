@@ -3,13 +3,13 @@ import { useContext } from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 import ThemeProvider, { ThemeContext } from './context/ThemeContext';
+import AuthProvider, { AuthContext } from './context/AuthContext';
+import NavBar from './components/NavBar/NavBar';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { HomePage } from './pages/HomePage';
 import { BlogPost } from './pages/BlogPost';
 import { Login } from './pages/Login';
-import AuthProvider, { AuthContext } from './context/AuthContext';
 import { Admin } from './pages/Admin';
-import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
@@ -46,7 +46,6 @@ function ThemeWrapper() {
             path="/admin"
             element={isAuthenticated ? <Admin /> : <Login />}
           />
-
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
@@ -63,4 +62,5 @@ function ThemeWrapper() {
     </div>
   );
 }
+
 export default App;
