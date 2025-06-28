@@ -1,5 +1,19 @@
 export type Post = { id: string; slug: string; title: string; body: string };
 
+// from https://dummyjson.com/posts
+export type DummyPost = {
+  id: number;
+  title: string;
+  body: string;
+  tags: string[];
+  reactions: {
+    likes: number;
+    dislikes: number;
+  };
+  views: number;
+  userId: number;
+};
+
 export const posts = new Array<Post>(
   {
     id: '1',

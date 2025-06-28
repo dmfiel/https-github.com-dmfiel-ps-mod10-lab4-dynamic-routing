@@ -8,7 +8,7 @@ function NavBar() {
 
   return (
     <header>
-      <nav className="grid grid-cols-3 mt-5">
+      <nav className="max-w-200 mx-auto grid grid-cols-3 mt-5">
         <div>
           <button
             className="text-black text-md bg-blue-500 hover:text-blue-700 hover:bg-blue-200 px-2 py-1  rounded-md w-fit"

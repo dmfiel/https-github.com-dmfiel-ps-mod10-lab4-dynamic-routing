@@ -36,7 +36,7 @@ function ThemeWrapper() {
         <h1 className="text-3xl font-bold text-center">My Super React Blog</h1>
       </Link>{' '}
       <NavBar />
-      <main className="mx-auto my-5 flex-1 flex flex-col gap-5 items-center">
+      <main className="max-w-200 mx-auto my-5 flex-1 flex flex-col gap-5 items-center">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<HomePage />} />
